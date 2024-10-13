@@ -40,7 +40,9 @@ export enum Path {
   Plugins = "/plugins",
   Auth = "/auth",
   Sd = "/sd",
+  Mj = "/mj"
   SdNew = "/sd-new",
+  MjNew = "/mj-new",
   Artifacts = "/artifacts",
   SearchChat = "/search-chat",
 }
@@ -58,6 +60,7 @@ export enum ApiPath {
   Moonshot = "/api/moonshot",
   Iflytek = "/api/iflytek",
   Stability = "/api/stability",
+  Mj = "/api/mj",
   Artifacts = "/api/artifacts",
 }
 
@@ -81,6 +84,7 @@ export enum StoreKey {
   Update = "chat-update",
   Sync = "sync",
   SdList = "sd-list",
+  MjList = "mj-list",
 }
 
 export const DEFAULT_SIDEBAR_WIDTH = 300;
@@ -133,11 +137,22 @@ export enum ModelProvider {
   Hunyuan = "Hunyuan",
   Moonshot = "Moonshot",
   Iflytek = "Iflytek",
+  Mj = "mj",
 }
 
 export const Stability = {
   GeneratePath: "v2beta/stable-image/generate",
   ExampleEndpoint: "https://api.stability.ai",
+};
+export const MJProxy = {
+  ImaginePath: "submit/imagine",
+  BlendPath: "submit/blend",
+  DescribePath: "submit/describe",
+  ModalPath: "submit/modal",
+  ActionPath: "submit/action",
+  GetTaskById: "task/{id}/fetch",
+  GetTaskSeedById: "task/{id}/image-seed",
+  ExampleEndpoint: "https://example.com/mj",
 };
 
 export const Anthropic = {
@@ -499,6 +514,7 @@ export const PLUGINS = [
   { name: "Plugins", path: Path.Plugins },
   { name: "Stable Diffusion", path: Path.Sd },
   { name: "Search Chat", path: Path.SearchChat },
+  { name: "Midjourney", path: Path.Mj, icon: "🎨" },
 ];
 
 export const SAAS_CHAT_URL = "https://nextchat.dev/chat";
