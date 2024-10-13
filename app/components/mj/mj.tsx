@@ -337,7 +337,7 @@ export function Mj() {
                                   >
                                     <ChatAction
                                       text={btn.label || btn.emoji}
-                                      style={{}}
+                                      icon={<DeleteIcon />}
                                       onClick={() => {
                                         if (
                                           btn.customId.startsWith(
