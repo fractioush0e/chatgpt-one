@@ -13,6 +13,7 @@ import {
   MOONSHOT_BASE_URL,
   STABILITY_BASE_URL,
   IFLYTEK_BASE_URL,
+  MJ_PROXY_URL,
 } from "../constant";
 import { getHeaders } from "../client/api";
 import { getClientConfig } from "../config/client";
@@ -43,6 +44,8 @@ const DEFAULT_MOONSHOT_URL = isApp ? MOONSHOT_BASE_URL : ApiPath.Moonshot;
 const DEFAULT_STABILITY_URL = isApp ? STABILITY_BASE_URL : ApiPath.Stability;
 
 const DEFAULT_IFLYTEK_URL = isApp ? IFLYTEK_BASE_URL : ApiPath.Iflytek;
+
+const DEFAULT_MJ_PROXY_URL = isApp ? MJ_PROXY_URL : ApiPath.Mj as string;
 
 const DEFAULT_ACCESS_STATE = {
   accessCode: "",

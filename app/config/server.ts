@@ -135,7 +135,7 @@ export const getServerSideConfig = () => {
   }
 
   const isStability = !!process.env.STABILITY_API_KEY;
-
+  const isMj = !!process.env.MJ_PROXY_KEY;
   const isAzure = !!process.env.AZURE_URL;
   const isGoogle = !!process.env.GOOGLE_API_KEY;
   const isAnthropic = !!process.env.ANTHROPIC_API_KEY;
@@ -166,6 +166,10 @@ export const getServerSideConfig = () => {
     isStability,
     stabilityUrl: process.env.STABILITY_URL,
     stabilityApiKey: getApiKey(process.env.STABILITY_API_KEY),
+
+    isMj,
+    mjpUrl: process.env.MJ_PROXY_URL,
+    mjpApiKey: getApiKey(process.env.MJ_PROXY_KEY),
 
     isAzure,
     azureUrl: process.env.AZURE_URL,
