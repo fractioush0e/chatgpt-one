@@ -10,6 +10,7 @@ export const FETCH_TAG_URL = `https://api.github.com/repos/${OWNER}/${REPO}/tags
 export const RUNTIME_CONFIG_DOM = "danger-runtime-config";
 
 export const STABILITY_BASE_URL = "https://api.stability.ai";
+export const MJ_PROXY_URL = "https://api.stability.ai";
 
 export const OPENAI_BASE_URL = "https://api.openai.com";
 export const ANTHROPIC_BASE_URL = "https://api.anthropic.com";
@@ -40,7 +41,7 @@ export enum Path {
   Plugins = "/plugins",
   Auth = "/auth",
   Sd = "/sd",
-  Mj = "/mj"
+  Mj = "/mj",
   SdNew = "/sd-new",
   MjNew = "/mj-new",
   Artifacts = "/artifacts",
