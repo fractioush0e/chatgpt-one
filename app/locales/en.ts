@@ -776,6 +776,65 @@ const en: LocaleType = {
     GenerateParams: "Generate Params",
     Detail: "Detail",
   },
+  Mj: {
+    SubTitle: (count: number) => `${count} images`,
+    Actions: {
+      Params: "See Params",
+      Copy: "Copy Prompt",
+      Delete: "Delete",
+      Retry: "Retry",
+      ReturnHome: "Return Home",
+      History: "History",
+    },
+    EmptyRecord: "No images yet",
+    Status: {
+      Name: "Status",
+      Success: "Success",
+      Error: "Error",
+      Wait: "Waiting",
+      Running: "Running",
+    },
+    Danger: {
+      Delete: "Confirm to delete?",
+    },
+    GenerateParams: "Generate Params",
+    Detail: "Detail",
+  },
+  MjPanel: {
+    Prompt: "Prompt",
+    NegativePrompt: "Negative Prompt",
+    PleaseInput: (name: string) => `Please input ${name}`,
+    AspectRatio: "Aspect Ratio",
+    AIModel: "AI Model",
+    AIAction: "AI Action",
+    ModelVersion: "Model Version",
+    Submit: "Submit",
+    TaskId: "Task ID",
+    ParamIsRequired: (name: string) => `${name} is required`,
+    Imagine: "Imagine",
+    Blend: "Blend",
+    Describe: "Describe",
+    VaryRegion: "Vary Region",
+    SubmitRegion: "Submit Vary Region",
+    ImagineParam: {
+      IwImage: "Reference image",
+      IwImageTip:
+        "Up to 2 images can be removed by selecting and clicking on the image",
+      IwTitle: "Reference image weight",
+      IwTip: "The range is 0.0~2.0",
+      SeedTip: "The range is 0~4294967294",
+    },
+    BlendParam: {
+      ImageTitle: "Blend image",
+      ImageTip:
+        "At least 2, at most 5, select the image and click on it to remove it",
+      Dimensions: "Dimensions",
+    },
+    DescribeParam: {
+      ImageTitle: "Describe image",
+      ImageTip: "After selecting the image, click on it to remove it",
+    },
+  },
 };
 
 export default en;
